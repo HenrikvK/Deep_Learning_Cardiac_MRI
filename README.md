@@ -8,28 +8,21 @@ For details of the project, also have a look at the [project report.
      
 ### HOW TO SET UP:
 1. Download the files from the [Kaggle website](https://www.kaggle.com/c/second-annual-data-science-bowl/data)
-2. Preprocess the data
+* adapt data path in localisation.py
+2. Preprocess the data (localisation.py)
 * transform the DICOM files to numpy vectors of the pictures
 * produce a vector containing the ids of the patients, the training labels and the pixel_spacing information.
-This is done in localisation.py. An older version without the
-extraction of the heart location can be found in data.py.
+* older version without the extraction of the heart location can be found in data.py.
+3. perform the training (train.py)
+* model is built in model.py
+4. evaluate the performance (submission.py)
+* uses the neural network weights produced by train.py to predict the labels
+for the test set
+* evaluates the CRPS error of the prediction
+* compute CRPS score once for every SAX slice individually
+5. Visualize and analyse results with Data project visualization.ipynb
 
-Afterwards, we perform the training with train.py. The model of the 
-Neural Network is build in model.py.
+Use test-notebook.ipynb to run everything
 
-Lastly, we evaluate the performence with Submission.py which uses 
-the neural network weights produced by train.py to predict the labels
-for the test set and evaluates the CRPS error of the predictions. We
-compute the CRPS score once for every SAX slice individually and once
-we average over all Sax slices of the patient. 
-
-We do not produce and output file, since we can't upload solutions, 
-because the challenge has ended.
-
-
-
-
-
-********************************************************************
 
 
