@@ -1,8 +1,9 @@
-ReadME.txt instructions
-********************************************************************
-Name: Transforming How We Diagnose Heart Disease
+# Deep Learning approach to measure cardiac volumes
 Author: Henrik von Kleist
-********************************************************************
+Implementation of a Deep Learning algorithm to find the cardiac volumes 
+and derive the ejection fraction from cardiac magnetic resonance images (MRI)
+as part of the Kaggle competition: [the second annual data science bowl](https://www.kaggle.com/c/second-annual-data-science-bowl/overview/description)
+
      
 DESCRIPTION:
 
